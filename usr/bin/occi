@@ -217,7 +217,7 @@ sub handle_wifi {
   } elsif (defined $config{wifi_password}) {
     my $wpa_config = capture_string(
       'wpa_passphrase',
-      $config{wifi_ssid},
+      $config{'wifi_ssid'},
       $config{'wifi_password'}
     );
 
